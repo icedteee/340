@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,100,800,900,400,200,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
@@ -39,7 +40,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body onload="checkImage(); checkDisc();">
     <div id="tf-home">
         <div class="overlay">
             <div id="sticky-anchor"></div>
@@ -60,8 +61,8 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav navbar-right">
                         <li><a href="#tf-home">Home</a></li>
-                        <li><a href="#tf-service">Services</a></li>
-                        <li><a href="#tf-portfolio">Portfolio</a></li>
+                        <li><a href="#tf-service">Articles</a></li>
+                        <li><a href="#tf-portfolio">Photos</a></li>
                         <li><a href="#tf-about">About</a></li>
                         <li><a href="#tf-contact">Contact</a></li>
                       </ul>
@@ -88,10 +89,9 @@
 
                 <div class="media">
                   <div class="media-left media-middle">
-                    <i class="fa fa-motorcycle"></i>
                   </div>
                   <div class="media-body">
-                    <h4 class="media-heading">Brand & Graphics Design</h4>
+                    <h4 class="media-heading" id="disc-0"></h4>
                     <p>Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                   </div>
                 </div>
@@ -102,10 +102,9 @@
 
                 <div class="media">
                   <div class="media-left media-middle">
-                    <i class="fa fa-gears"></i>
                   </div>
                   <div class="media-body">
-                    <h4 class="media-heading">Web Designer & Developer</h4>
+                    <h4 class="media-heading" id="disc-1"></h4>
                     <p>Cras sit amet nibh libero, in gravida nulla. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                   </div>
                 </div>
@@ -116,10 +115,9 @@
 
                 <div class="media">
                   <div class="media-left media-middle">
-                    <i class="fa fa-heartbeat"></i>
                   </div>
                   <div class="media-body">
-                    <h4 class="media-heading">Business Consultant</h4>
+                    <h4 class="media-heading" id="disc2"></h4>
                     <p>Metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                   </div>
                 </div>
@@ -140,29 +138,29 @@
 
             <div class="row">
                 <div class="col-md-4">
-                    <img src="img/09.jpg" class="img-responsive">
+                    <img id="image-0" src="" class="img-responsive">
                 </div>
 
                 <div class="col-md-4">
-                    <img src="img/02.jpg" class="img-responsive">
+                    <img id="image-1" src="" class="img-responsive">
                 </div>
 
                 <div class="col-md-4">
-                    <img src="img/03.jpg" class="img-responsive">
+                    <img id="image-2" src="" class="img-responsive">
                 </div>
             </div>
 
             <div class="row toppadding">
                 <div class="col-md-4">
-                    <img src="img/04.jpg" class="img-responsive">
+                    <img id="image-3" src="" class="img-responsive">
                 </div>
 
                 <div class="col-md-4">
-                    <img src="img/05.jpg" class="img-responsive">
+                    <img id="image-4" src="" class="img-responsive">
                 </div>
 
                 <div class="col-md-4">
-                    <img src="img/06.jpg" class="img-responsive">
+                    <img id="image-5" src="" class="img-responsive">
                 </div>
             </div>
 
@@ -174,7 +172,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-6">
-                        <h3>This is 7.</h3>
+                        <h3>This is 7</h3>
                         <br>
                         <p>iPhone 7 dramatically improves the most important aspects of the iPhone experience. It introduces advanced new camera systems. The best performance and battery life ever in an iPhone. Immersive stereo speakers. The brightest, most colorful iPhone display. Splash and water resistance.1 And it looks every bit as powerful as it is. This is iPhone 7.</p>
                         <a href="#tf-why-me" class="btn btn-primary my-btn dark">Why The iPhone</a>
