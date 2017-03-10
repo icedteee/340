@@ -258,6 +258,14 @@ ul.cat.list-inline li a:hover{
 	color: #222222;
 }
 
+#tf-why-me h4{
+			margin-bottom: 16px;
+			font-size: 18px;
+			font-weight: 700;
+			color: white;
+			text-shadow: 2px 2px black;
+}
+
 #tf-why-me .overlay{
 	height: auto;
 	background-attachment: fixed;
